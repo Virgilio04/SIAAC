@@ -1,0 +1,129 @@
+:root {
+    --color_background: #F3F4F4;
+    --color_primary: #5CA45F;
+    --color_down: #327033;
+    --color_text_black: #333;
+    --color_text_white: #fff;
+    --text_cabaçalho: "Montserrat Subrayada", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color_background);
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    list-style: none;
+}
+
+/* Usuário */
+
+.top {
+    background-color: var(--color_primary);
+    padding: 1.8rem;
+    width: 96.5%;
+    padding: 10px 20px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container__user{
+    text-align: center;
+}
+
+.container__user h1 {
+    font-weight: 700;
+    margin-top: 5rem;
+    border-bottom: 3px solid var(--color_primary);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.container__user span {
+    color: var(--color_primary);
+    font-weight: 700;
+}
+
+/* Imagens e botões */
+
+.section__user .section__content {
+    padding: 2rem 4rem;
+    text-align: center;
+}
+
+.section__user .section__content ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__user .section__content ul li .section__image {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+}
+
+.section__user .section__content ul li h3 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin: 2rem 0 1rem;
+    margin-top: 5rem;
+}
+
+.section__user .section__content h3 {
+    background-color: var(--color_primary);
+    padding: 1rem 4rem;
+    border-radius: 5px;
+    border: 2px solid var(--color_text_black);
+}
+
+.password__edit {
+    background-color: var(--color_primary);
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 7px;
+    border: 2px solid var(--color_text_black);
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-weight: 500px;
+}
+
+.section__user .user__img {
+    width: 80%;
+}
+
+.container__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.container__btn .btn {
+    padding: 15px 50px;
+    background-color: var(--color_primary);
+    border: 1px solid var(--color_text_black);
+    color: var(--color_background);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: backgound-color 0.3s;
+}
+
+.container__btn .btn:hover {
+    background-color: var(--color_down);
+    border: 1px solid var(--color_text_black);
+}

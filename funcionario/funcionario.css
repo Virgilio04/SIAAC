@@ -1,0 +1,102 @@
+:root {
+    --color_background: #F3F4F4;
+    --color_primary: #5CA45F;
+    --color_down: #327033;
+    --color_text_black: #333;
+    --color_text_white: #fff;
+    --text_cabaçalho: "Montserrat Subrayada", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color_background);
+}
+
+.top-bar {
+    background-color: var(--color_primary);
+    padding: 1.8rem;
+    width: 96.5%;
+    padding: 10px 20px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+body {
+    padding-top: 4%; /* Ajusta conforme a altura da barra superior */
+}
+
+.cadastro-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: var(--color_text_white);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.info-block {
+    margin-bottom: 20px;
+}
+
+.info-block h3 {
+    margin-top: 0;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="date"],
+.input-group input[type="tel"],
+.input-group input[type="number"],
+.input-group select,
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn a {
+    text-decoration: none;
+    border: 2px solid var(--color_text_white);
+    background-color: var(--color_primary);
+    color: var(--color_text_white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px; /* Espaço acima do botão */
+    font-size: 1rem;
+}
+
+.btn a:hover{
+    background-color: var(--color_down);
+}

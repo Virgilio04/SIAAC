@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cadastro da Escola </title>
+    <link rel="stylesheet" href="cad_escola.css">
+</head>
+<body>
+    <div class="top-bar">
+        <img src="/SIAAC/assets/siaac_logo.png" width="30px">
+    </div>
+
+    <div class="cadastro-container">
+        <h2>Cadastro de Escola</h2>
+        <form action="/submit-your-school-registration-form" method="POST">
+            <div class="info-block">
+                <h3>Informações da Escola</h3>
+                <div class="input-group">
+                    <label for="nome-escola">Nome da Escola:</label>
+                    <input type="text" id="nome-escola" name="nome-escola" required>
+                </div>
+                <div class="input-group">
+                    <label for="inep">Inep:</label>
+                    <input type="text" name="inep" id="inep">
+                </div>
+                <div class="input-group">
+                    <label for="telefone-escola">Telefone:</label>
+                    <input type="text" id="telefone-escola" name="telefone-escola" placeholder="(00) 0000-0000">
+                </div>
+                <div class="input-group">
+                    <label for="email-escola">E-mail:</label>
+                    <input type="email" id="email-escola" name="email-escola" required>
+                </div>
+            </div>
+
+            <div class="info-block">
+                <h3>Endereço da Escola</h3>
+                <div class="input-group">
+                    <label for="endereco-escola">Rua:</label>
+                    <input type="text" id="endereco-escola" name="endereco-escola" required>
+                </div>
+                <div class="input-group">
+                    <label for="cidade-escola">Cidade:</label>
+                    <input type="text" id="cidade-escola" name="cidade-escola" required>
+                </div>
+                <div class="input-group">
+                    <label for="estado-escola">Estado:</label>
+                    <input type="text" id="estado-escola" name="estado-escola" required>
+                </div>
+                <div class="input-group">
+                    <label for="cep-escola">CEP:</label>
+                    <input type="text" id="cep-escola" name="cep-escola" required>
+                </div>
+            </div>
+
+            <div class="btn"> 
+                <a href="/SIAAC/formulario/formulario.html"> Voltar </a>
+                <a href="/SIAAC/funcionario/funcionario.html"> Avançar </a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

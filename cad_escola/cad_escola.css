@@ -1,0 +1,96 @@
+:root {
+    --color_background: #F3F4F4;
+    --color_primary: #5CA45F;
+    --color_down: #327033;
+    --color_text_black: #333;
+    --color_text_white: #fff;
+    --text_cabaçalho: "Montserrat Subrayada", sans-serif;
+}
+
+body {
+    font-family: var(--text_cabaçalho);
+    margin: 0;
+    padding-top: 50px; /* Ajustado para garantir espaço abaixo da barra fixa */
+    background-color: var(--color_background); /* Cor de fundo leve para a página */
+}
+
+.top-bar {
+    background-color: var(--color_primary);
+    padding: 1.8rem;
+    width: 96.5%;
+    padding: 10px 20px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.cadastro-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: var(--color_text_white); /* Fundo branco para o container */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para melhorar a visibilidade */
+}
+
+h2 {
+    margin-top: 0;
+    color: var(--color_text_black); /* Cor escura para maior contraste */
+}
+
+.info-block {
+    margin-bottom: 20px;
+}
+
+.info-block h3 {
+    margin-top: 0;
+    color: rgb(0, 0, 0)000; /* Cor escura para subtítulos */
+}
+
+.input-group {
+    margin-bottom: 15px; /* Espaçamento consistente entre grupos de input */
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Texto em negrito para etiquetas */
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que padding não afete a largura */
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn a {
+    text-decoration: none;
+    border: 2px solid var(--color_text_white);
+    background-color: var(--color_primary);
+    color: var(--color_text_white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px; /* Espaço acima do botão */
+    font-size: 1rem;
+}
+
+.btn a:hover{
+    background-color: var(--color_down);
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="formulario.css">
+    <title> Entrar/Cadastrar-se </title>
+</head>
+<body>
+    <div class="top"> 
+        <img src="/SIAAC/assets/siaac_logo.png" width="30px"> 
+    </div>
+    
+    <div class="container__form">
+        <h1> LOGIN </h2>
+        <form action="submit.php" method="post">
+            <div class="form__group">
+                <label for="email">EMAIL: </label>
+                <input type="text" id="email" name="email" required>
+            </div>
+
+            <div class="form__group">
+                <label for="senha">SENHA: </label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            
+            <div class="container__btn"> 
+                <a href="/SIAAC/usuario/usuario.html" class="btn"> ENTRAR </a>
+            </div>
+
+            <div class="links">
+                <a href="/SIAAC/esqueci_senha/esc_senha.html"> ESQUECI A SENHA </a>
+                <a href="/SIAAC/cad_escola/cad_escola.html"> CADASTRA-SE </a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

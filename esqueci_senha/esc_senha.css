@@ -1,0 +1,105 @@
+:root {
+    --color_background: #F3F4F4;
+    --color_primary: #5CA45F;
+    --color_down: #327033;
+    --color_text_black: #333;
+    --color_text_white: #fff;
+    --text_cabaçalho: "Montserrat Subrayada", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color_background);
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+/* Formulário */
+.top {
+    background-color: var(--color_primary);
+    padding: 1.8rem;
+    width: 96.5%;
+    padding: 10px 20px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container__form {
+    width: 25rem;
+    margin: 50px auto;
+    margin-top: 8rem;
+    background-color: var(--color_background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 8px 8px 5px rgba(0,0,0,0.1);
+}
+
+.container__form h1 {
+    text-align: center;
+    color: var(--color_text);
+    margin-bottom: 2rem;
+    font-family: var(--text_cabaçalho);
+}
+
+.container__form .form__group {
+    margin-bottom: 20px;
+}
+
+.container__form label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color_text_black);
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 99%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-weight: 400px;
+}
+
+.container__form .container__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.container__form .btn {
+    padding: 10px 30px;
+    background-color: var(--color_primary);
+    border: 1px solid var(--color_text_white);
+    color: var(--color_background);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: backgound-color 0.3s;
+    margin-top: 1rem;
+}
+
+.container__form .btn:hover {
+    background-color: var(--color_down);
+}
+
+.container__form .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.container__form .links a {
+    color: var(--color_primary);
+    margin-top: 15px;
+}
+
+.container__form .links a:hover {
+    border-bottom: 1px solid var(--color_primary);
+}
