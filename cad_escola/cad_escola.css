@@ -17,15 +17,14 @@ body {
 .top-bar {
     background-color: var(--color_primary);
     padding: 1.8rem;
-    width: 96.5%;
     padding: 10px 20px;
     box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     z-index: 100;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .cadastro-container {
@@ -36,25 +35,29 @@ body {
     border-radius: 10px;
     background-color: var(--color_text_white); /* Fundo branco para o container */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para melhorar a visibilidade */
+    font-weight: 600;
 }
 
-h2 {
+.cadastro-container h1 {
+    color: var(--color_down);
+    text-align: center;
     margin-top: 0;
-    color: var(--color_text_black); /* Cor escura para maior contraste */
 }
 
 .info-block {
-    margin-bottom: 20px;
+    margin-bottom: 2.5rem;
 }
 
 .info-block h3 {
     margin-top: 0;
-    color: rgb(0, 0, 0)000; /* Cor escura para subtítulos */
-}
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+}   
 
 .input-group {
     margin-bottom: 15px; /* Espaçamento consistente entre grupos de input */
 }
+
 
 .input-group label {
     display: block;
@@ -89,8 +92,24 @@ h2 {
     cursor: pointer;
     margin-top: 10px; /* Espaço acima do botão */
     font-size: 1rem;
+    font-weight: 600;
 }
 
 .btn a:hover{
     background-color: var(--color_down);
 }
+
+.button {
+    text-decoration: none;
+    border: 2px solid var(--color_text_white);
+    background-color: var(--color_primary);
+    color: var(--color_text_white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px; /* Espaço acima do botão */
+    font-size: 1rem;
+    font-weight: 600;
+}
+

@@ -8,11 +8,11 @@
 </head>
 <body>
     <div class="top-bar">
-        <img src="/assets/siaac_logo.png" width="30px">
+        <img src="/SIAAC/assets/siaac_logo.png" width="30px">
     </div>
 
     <div class="cadastro-container">
-        <h2>Cadastro de Escola</h2>
+        <h1>Cadastro de Escola</h1>
         <form action="/submit-your-school-registration-form" method="POST">
             <div class="info-block">
                 <h3>Informações da Escola</h3>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="input-group">
                     <label for="email-escola">E-mail:</label>
-                    <input type="email" id="email-escola" name="email-escola" required>
+                    <input type="email-escola" id="email-escola" name="email" required>
                 </div>
             </div>
 
@@ -39,6 +39,10 @@
                 <div class="input-group">
                     <label for="endereco-escola">Rua:</label>
                     <input type="text" id="endereco-escola" name="endereco-escola" required>
+                </div>
+                <div class="input-group">
+                    <label for="bairro-escola">Bairro</label>
+                    <input type="text" id="bairro-escola" name="bairro-escola">
                 </div>
                 <div class="input-group">
                     <label for="cidade-escola">Cidade:</label>
@@ -55,8 +59,9 @@
             </div>
 
             <div class="btn"> 
-                <a href="/index.html"> Voltar </a>
-                <a href="/funcionario/funcionario.html"> Avançar </a>
+                <a href="/SIAAC/index.html"> Voltar </a>
+                <a href="/SIAAC/funcionario/funcionario.html"> <button>Avançar</button>
+                </a>
             </div>
         </form>
     </div>
